@@ -1,0 +1,21 @@
+----------------------------
+DAX QUARY FOR DATES TABLE
+----------------------------
+
+* creating dates table 
+Dates = CALENDAR(MIN(supermarket_sales[Date]),MAX(supermarket_sales[Date]))
+
+*creating date column 
+Dates = CALENDAR(MIN(supermarket_sales[Date]),MAX(supermarket_sales[Date]))
+
+*creating DayNumber
+DayNumber = WEEKDAY(Dates[Date])
+
+*creating MonthName
+MonthName = FORMAT(Dates[Date],"MMMM")
+
+*creating MonthNumber
+MonthNumber = MONTH(Dates[Date])
+
+*creating Weekday
+WeekDay = FORMAT(Dates[Date],"DDDD")
